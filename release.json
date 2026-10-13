@@ -1,7 +1,8 @@
 {
-  "release": "r11-20261012",
-  "scope": "全馆曲线布局去顶预览",
-  "views": 4,
+  "release": "r12-20261013",
+  "scope": "分区与连续动线二维平面审核",
+  "sheets": 2,
   "panoramas": 0,
-  "design_review": "pending"
+  "design_review": "pending",
+  "model_modified": false
 }
