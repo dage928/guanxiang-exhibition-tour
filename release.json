@@ -1,9 +1,14 @@
 {
-  "release": "r14-20261014",
-  "scope": "立体空间概念图片审核",
-  "images": 3,
+  "release": "r15-20261014",
+  "scope": "全馆整顶可拆SU模型的真实几何渲染预览",
+  "images": 6,
   "approved_plan": "r13",
   "panoramas": 0,
   "design_review": "pending",
-  "model_modified": false
+  "native_skp_files_local": 4,
+  "scale": "1:100",
+  "base_mm": [
+    600,
+    400
+  ]
 }
