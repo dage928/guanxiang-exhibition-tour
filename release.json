@@ -1,8 +1,9 @@
 {
-  "release": "r15-20261014",
-  "scope": "全馆整顶可拆SU模型的真实几何渲染预览",
-  "images": 6,
-  "approved_plan": "r13",
+  "release": "r17-20261014",
+  "scope": "屋顶深化与400组陈列的实际模型渲染预览",
+  "images": 11,
+  "approved_plan": "r16",
+  "approved_layout": "r13",
   "panoramas": 0,
   "design_review": "pending",
   "native_skp_files_local": 4,
