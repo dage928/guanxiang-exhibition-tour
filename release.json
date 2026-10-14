@@ -1,7 +1,8 @@
 {
-  "release": "r13-20261014",
-  "scope": "错落厅堂与借景游园二维平面审核",
-  "sheets": 2,
+  "release": "r14-20261014",
+  "scope": "立体空间概念图片审核",
+  "images": 3,
+  "approved_plan": "r13",
   "panoramas": 0,
   "design_review": "pending",
   "model_modified": false
