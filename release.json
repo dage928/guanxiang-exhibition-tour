@@ -1,12 +1,13 @@
 {
-  "release": "r17-20261014",
-  "scope": "屋顶深化与400组陈列的实际模型渲染预览",
-  "images": 11,
-  "approved_plan": "r16",
+  "release": "r18-20261015",
+  "scope": "去顶与内部精细化实际模型预览",
+  "images": 12,
+  "reference_images": 2,
+  "confirmed_choices": "1A/2A/3A/4A",
   "approved_layout": "r13",
   "panoramas": 0,
   "design_review": "pending",
-  "native_skp_files_local": 4,
+  "native_skp_files_local": 2,
   "scale": "1:100",
   "base_mm": [
     600,
