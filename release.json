@@ -1,9 +1,9 @@
 {
-  "release": "r18-20261015",
-  "scope": "去顶与内部精细化实际模型预览",
+  "release": "r20-20261015",
+  "scope": "参考图陈设重排实际模型预览",
   "images": 12,
   "reference_images": 2,
-  "confirmed_choices": "1A/2A/3A/4A",
+  "confirmed_choices": "r19文字方案通过；8桌16席；400件组；墙门不变",
   "approved_layout": "r13",
   "panoramas": 0,
   "design_review": "pending",
