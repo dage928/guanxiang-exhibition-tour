@@ -1,16 +1,9 @@
 {
-  "release": "r24-20261015",
-  "scope": "寻香厅墙柜与曲线展台实际模型预览",
-  "images": 12,
-  "reference_images": 0,
-  "confirmed_choices": "r23方案通过；三个历史主题段、暖浅墙柜、三组曲直展台、独立可隐藏天花",
-  "approved_layout": "r13",
-  "panoramas": 0,
+  "release": "r26-20261016",
+  "type": "2D plan review",
+  "images": 2,
+  "pdf_pages": 2,
+  "new_models": 0,
   "design_review": "pending",
-  "native_skp_files_local": 2,
-  "scale": "1:100",
-  "base_mm": [
-    600,
-    400
-  ]
+  "retained_native_model": "r24"
 }
