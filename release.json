@@ -1,9 +1,9 @@
 {
-  "release": "r20-20261015",
-  "scope": "参考图陈设重排实际模型预览",
+  "release": "r22-20261015",
+  "scope": "岭南园林入口与卫生间实际模型预览",
   "images": 12,
-  "reference_images": 2,
-  "confirmed_choices": "r19文字方案通过；8桌16席；400件组；墙门不变",
+  "reference_images": 0,
+  "confirmed_choices": "r21文字方案通过；两个独立厕位、共用双盆洗手区、门头与序厅岭南园林氛围",
   "approved_layout": "r13",
   "panoramas": 0,
   "design_review": "pending",
