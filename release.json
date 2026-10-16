@@ -1,9 +1,6 @@
 {
-  "release": "r26-20261016",
-  "type": "2D plan review",
-  "images": 2,
-  "pdf_pages": 2,
-  "new_models": 0,
-  "design_review": "pending",
-  "retained_native_model": "r24"
+  "revision": "r27",
+  "date": "2026-10-16",
+  "kind": "actual-model-review",
+  "images": 13
 }
