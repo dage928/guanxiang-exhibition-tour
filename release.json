@@ -1,9 +1,11 @@
 {
-  "revision": "r39",
-  "date": "2026-10-19",
-  "kind": "generated-concept-image-review",
+  "revision": "r40",
+  "kind": "generated-proportion-review",
   "images": 4,
-  "windows": 5,
-  "native_model_revision": "r38",
-  "review_status": "pending"
+  "edited_images": 3,
+  "flower_windows": 4,
+  "octagon": "unchanged r39",
+  "width_factor": 0.9,
+  "height_factor": 0.8,
+  "native_model_revision": "r38"
 }
