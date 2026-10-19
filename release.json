@@ -1,7 +1,9 @@
 {
-  "revision": "r38",
+  "revision": "r39",
   "date": "2026-10-19",
-  "kind": "actual-model-review",
-  "current_views": 11,
-  "comparison_pairs": 5
+  "kind": "generated-concept-image-review",
+  "images": 4,
+  "windows": 5,
+  "native_model_revision": "r38",
+  "review_status": "pending"
 }
