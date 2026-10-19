@@ -1,12 +1,14 @@
 {
-  "revision": "r41",
-  "kind": "double-axis-symmetry-image-review",
+  "revision": "r42",
+  "kind": "rounded-quatrefoil-original-pattern-review",
   "images": 4,
   "edited_images": 3,
   "flower_windows": 4,
-  "exact_vector_patterns": 3,
-  "octagon": "unchanged r40",
-  "width_factor": 0.9,
-  "height_factor": 0.8,
+  "octagon": "unchanged",
+  "shape_reference": "middle right of user collage",
+  "shape": "rounded nearly equal width and height",
+  "width_target": "keep current",
+  "height_target": "shorter",
+  "pattern_source": "r40 rich patterns",
   "native_model_revision": "r38"
 }
