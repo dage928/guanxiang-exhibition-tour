@@ -1,14 +1,8 @@
 {
-  "revision": "r42",
-  "kind": "rounded-quatrefoil-original-pattern-review",
-  "images": 4,
-  "edited_images": 3,
-  "flower_windows": 4,
-  "octagon": "unchanged",
-  "shape_reference": "middle right of user collage",
-  "shape": "rounded nearly equal width and height",
-  "width_target": "keep current",
-  "height_target": "shorter",
-  "pattern_source": "r40 rich patterns",
-  "native_model_revision": "r38"
+  "revision": "r43",
+  "date": "2026-10-19",
+  "kind": "actual-model-and-editable-cad",
+  "model_views": 11,
+  "comparisons": 5,
+  "cad_drawings": 13
 }
