@@ -2,4 +2,4 @@
 
 body[data-release="M85-r69"] .lead figure img{width:100%;height:auto;max-height:680px;object-fit:contain;background:#fff} @media(max-width:700px){body[data-release="M85-r69"] .lead figure img{max-height:560px}}
 
-body[data-release="M97-r81"] .lead{grid-template-columns:minmax(0,1.55fr) minmax(260px,1fr)} body[data-release="M97-r81"] .lead figure img{width:100%;height:auto;max-height:900px;object-fit:contain;background:#f6f3eb} @media(max-width:700px){body[data-release="M97-r81"] .lead{grid-template-columns:1fr}}
+body[data-release="M98-r82"] .lead{grid-template-columns:minmax(0,1.55fr) minmax(260px,1fr)} body[data-release="M98-r82"] .lead figure img{width:100%;height:auto;max-height:900px;object-fit:contain;background:#f6f3eb} @media(max-width:700px){body[data-release="M98-r82"] .lead{grid-template-columns:1fr}}
