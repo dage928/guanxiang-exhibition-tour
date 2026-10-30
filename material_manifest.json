@@ -1,11 +1,11 @@
 {
-  "version": "r82",
+  "version": "r83",
   "files": [
     {
       "id": "01",
       "title": "设计说明",
       "category": "板块",
-      "path": "透明素材/板块/01_设计说明_透明底_300dpi_r82.png",
+      "path": "透明素材/板块/01_设计说明_透明底_300dpi_r83.png",
       "preview": "透明素材/缩略预览/01.png",
       "bytes": 4044131,
       "sha256": "faea48ba9414eeb9458b0ddacff1f9473385e9947a1a7bf65b924645bac1538d",
@@ -32,10 +32,10 @@
       "id": "02",
       "title": "区位分析",
       "category": "板块",
-      "path": "透明素材/板块/02_区位分析_透明底_300dpi_r82.png",
+      "path": "透明素材/板块/02_区位分析_透明底_300dpi_r83.png",
       "preview": "透明素材/缩略预览/02.png",
-      "bytes": 453653,
-      "sha256": "7bcd0e7d3e1281f1f8367b194a731205d44eca654a6dcf132b4bc00eb8566036",
+      "bytes": 693254,
+      "sha256": "011c986f507108763670c802dbca8f3f1d049f441374f89f2f60d40b2dc73db7",
       "pixels": [
         6260,
         1867
@@ -49,8 +49,8 @@
         300.13796953052946
       ],
       "transparent": true,
-      "alpha_zero_fraction": 0.9130305918671529,
-      "alpha_partial_fraction": 0.007697421672191125,
+      "alpha_zero_fraction": 0.8589244675043765,
+      "alpha_partial_fraction": 0.018893904728331832,
       "source": "native layout source rendered with no page background",
       "effect_image_pixels_unchanged": false,
       "online": true
@@ -59,7 +59,7 @@
       "id": "03",
       "title": "历史文化",
       "category": "板块",
-      "path": "透明素材/板块/03_历史文化_透明底_300dpi_r82.png",
+      "path": "透明素材/板块/03_历史文化_透明底_300dpi_r83.png",
       "preview": "透明素材/缩略预览/03.png",
       "bytes": 3113112,
       "sha256": "e334714f36da980c5c03e2109428819bf3af6e69fb8fe18f53a77054f3c476ea",
@@ -86,7 +86,7 @@
       "id": "04",
       "title": "人群分析",
       "category": "板块",
-      "path": "透明素材/板块/04_人群分析_透明底_300dpi_r82.png",
+      "path": "透明素材/板块/04_人群分析_透明底_300dpi_r83.png",
       "preview": "透明素材/缩略预览/04.png",
       "bytes": 5961356,
       "sha256": "1e4f9b1b9a8501f141eeac002474c3a947cec9794f293e7906bd139536dc5dbc",
@@ -113,25 +113,25 @@
       "id": "05",
       "title": "概念提取",
       "category": "板块",
-      "path": "透明素材/板块/05_概念提取_透明底_300dpi_r82.png",
+      "path": "透明素材/板块/05_概念提取_透明底_300dpi_r83.png",
       "preview": "透明素材/缩略预览/05.png",
-      "bytes": 2136913,
-      "sha256": "f64ca649ea03018bcf7835209f53be8ebbfe82bc22ba26b80d689644acf0d42b",
+      "bytes": 3563109,
+      "sha256": "cf4485880971d9b0f553db2f03ba7d3536d37805e16eed0c65c868248d964706",
       "pixels": [
-        5871,
+        11067,
         2221
       ],
       "print_mm": [
-        496.99998236762144,
+        936.999998643663,
         188.0000018649631
       ],
       "effective_ppi": [
-        300.0470931399274,
+        300.0019214588086,
         300.07127361903264
       ],
       "transparent": true,
-      "alpha_zero_fraction": 0.9264072500989494,
-      "alpha_partial_fraction": 0.047425470825509984,
+      "alpha_zero_fraction": 0.939804368683611,
+      "alpha_partial_fraction": 0.04091529278484571,
       "source": "native layout source rendered with no page background",
       "effect_image_pixels_unchanged": false,
       "online": true
@@ -140,25 +140,25 @@
       "id": "06",
       "title": "总平面与功能分区_绿植版",
       "category": "板块",
-      "path": "透明素材/板块/06_总平面与功能分区_绿植版_透明底_300dpi_r82.png",
+      "path": "透明素材/板块/06_总平面与功能分区_绿植版_透明底_300dpi_r83.png",
       "preview": "透明素材/缩略预览/06.png",
-      "bytes": 30100320,
-      "sha256": "d712ab77209052c111b63e1f98a97436a6c1e0643f4c2095d8b27f8baf76a218",
+      "bytes": 32701885,
+      "sha256": "3d6a30bbcca2eca9b9085c4bdcd512345716927a5ca7919accf379cd6100a34f",
       "pixels": [
-        10158,
+        7217,
         5717
       ],
       "print_mm": [
-        859.9999613444011,
+        611.0000006781684,
         484.00000067816836
       ],
       "effective_ppi": [
-        300.015362322411,
+        300.0193122692903,
         300.0243797449028
       ],
       "transparent": true,
-      "alpha_zero_fraction": 0.5171526198810241,
-      "alpha_partial_fraction": 0.1529464511445073,
+      "alpha_zero_fraction": 0.3583337681817432,
+      "alpha_partial_fraction": 0.23701191012833406,
       "source": "native layout source rendered with no page background",
       "effect_image_pixels_unchanged": false,
       "online": true
@@ -167,25 +167,25 @@
       "id": "07",
       "title": "设计策略",
       "category": "板块",
-      "path": "透明素材/板块/07_设计策略_透明底_300dpi_r82.png",
+      "path": "透明素材/板块/07_设计策略_透明底_300dpi_r83.png",
       "preview": "透明素材/缩略预览/07.png",
-      "bytes": 368518,
-      "sha256": "78b5ccb9920e90e1b239c593063809559f04de94a2ac09a3292a4ae14fefed7e",
+      "bytes": 15126880,
+      "sha256": "1bd048477b5267e0dd91d7c7c86f17a2c9db9c39a7faa29ca24d69972bde31e6",
       "pixels": [
-        4902,
-        2221
+        3591,
+        5717
       ],
       "print_mm": [
-        414.99999186197914,
-        188.0000018649631
+        304.00000576443136,
+        484.00000067816836
       ],
       "effective_ppi": [
-        300.0260299798026,
-        300.07127361903264
+        300.0374943107054,
+        300.0243797449028
       ],
       "transparent": true,
-      "alpha_zero_fraction": 0.8821311941886275,
-      "alpha_partial_fraction": 0.00839984635368302,
+      "alpha_zero_fraction": 0.5948078171640401,
+      "alpha_partial_fraction": 0.005042195600364681,
       "source": "native layout source rendered with no page background",
       "effect_image_pixels_unchanged": false,
       "online": true
@@ -194,25 +194,25 @@
       "id": "08",
       "title": "爆炸分析",
       "category": "板块",
-      "path": "透明素材/板块/08_爆炸分析_透明底_300dpi_r82.png",
+      "path": "透明素材/板块/08_爆炸分析_透明底_300dpi_r83.png",
       "preview": "透明素材/缩略预览/08.png",
-      "bytes": 44802803,
-      "sha256": "8a4b2a79927391798986ea6e23b318395c8268664c7650ba91860cb0155b2511",
+      "bytes": 44095680,
+      "sha256": "c8f8124f59aae28f5f80a9968132965b221e3c980a61644df121d9e5eaddfd1e",
       "pixels": [
-        8020,
+        7052,
         5717
       ],
       "print_mm": [
-        678.9999844021266,
+        596.9999938964843,
         484.00000067816836
       ],
       "effective_ppi": [
-        300.01178892422075,
+        300.03484393847134,
         300.0243797449028
       ],
       "transparent": true,
-      "alpha_zero_fraction": 0.6095979004735843,
-      "alpha_partial_fraction": 0.3846168861561332,
+      "alpha_zero_fraction": 0.5634756169492208,
+      "alpha_partial_fraction": 0.4320812156199713,
       "source": "native layout source rendered with no page background",
       "effect_image_pixels_unchanged": false,
       "online": true
@@ -221,7 +221,7 @@
       "id": "09",
       "title": "重点空间_效果图保持原样",
       "category": "板块",
-      "path": "透明素材/板块/09_重点空间_效果图保持原样_透明底_300dpi_r82.png",
+      "path": "透明素材/板块/09_重点空间_效果图保持原样_透明底_300dpi_r83.png",
       "preview": "透明素材/缩略预览/09.png",
       "bytes": 67004513,
       "sha256": "ee2cb69023c264ea562bf246dc1ffa27b59cd5e8a70101c66fa7c62a48c6968b",
@@ -248,7 +248,7 @@
       "id": "10",
       "title": "彩色立面与剖面",
       "category": "板块",
-      "path": "透明素材/板块/10_彩色立面与剖面_透明底_300dpi_r82.png",
+      "path": "透明素材/板块/10_彩色立面与剖面_透明底_300dpi_r83.png",
       "preview": "透明素材/缩略预览/10.png",
       "bytes": 1607127,
       "sha256": "aeda2ea5f1b211151ea06be90c9d7fe4d601bb8e26116eee67259f806e246226",
@@ -275,7 +275,7 @@
       "id": "11",
       "title": "材料与细节",
       "category": "板块",
-      "path": "透明素材/板块/11_材料与细节_透明底_300dpi_r82.png",
+      "path": "透明素材/板块/11_材料与细节_透明底_300dpi_r83.png",
       "preview": "透明素材/缩略预览/11.png",
       "bytes": 12950778,
       "sha256": "0e53d2448c7522259ff96684f55ebedc848f43a4ea4bc8306b42325fbb803d05",
@@ -302,7 +302,7 @@
       "id": "12",
       "title": "补充效果图_保持原样",
       "category": "板块",
-      "path": "透明素材/板块/12_补充效果图_保持原样_透明底_300dpi_r82.png",
+      "path": "透明素材/板块/12_补充效果图_保持原样_透明底_300dpi_r83.png",
       "preview": "透明素材/缩略预览/12.png",
       "bytes": 12972845,
       "sha256": "17ca13ba702689a1eaff7151cc2b1422473f4bc0841437de467b58ab25031b79",
@@ -329,25 +329,25 @@
       "id": "plan",
       "title": "净平面与绿植组合_无标题",
       "category": "独立元素",
-      "path": "透明素材/独立元素/plan_净平面与绿植组合_无标题_透明底_300dpi_r82.png",
+      "path": "透明素材/独立元素/plan_净平面与绿植组合_无标题_透明底_300dpi_r83.png",
       "preview": "透明素材/缩略预览/plan.png",
-      "bytes": 27053167,
-      "sha256": "cb75aada9aaa02700b084c8ab0de0432120abb32910ad00353a827f7f2f9b202",
+      "bytes": 32578801,
+      "sha256": "3870d313406a93993b83c77cc2d1b409910e566c7452fb0f244cf5a5d06459f8",
       "pixels": [
-        6851,
+        7146,
         4784
       ],
       "print_mm": [
-        579.9999979654947,
+        604.9999793158636,
         404.9999993218316
       ],
       "effective_ppi": [
-        300.0265527765614,
+        300.01389455459224,
         300.03358074931674
       ],
       "transparent": true,
-      "alpha_zero_fraction": 0.22869473440637283,
-      "alpha_partial_fraction": 0.26743459319709695,
+      "alpha_zero_fraction": 0.23208764732146617,
+      "alpha_partial_fraction": 0.2848931378220339,
       "source": "native layout source rendered with no page background",
       "effect_image_pixels_unchanged": false,
       "online": true
@@ -356,65 +356,65 @@
       "id": "greenery",
       "title": "外围绿植_独立图层",
       "category": "独立元素",
-      "path": "透明素材/独立元素/greenery_外围绿植_独立图层_透明底_300dpi_r82.png",
+      "path": "透明素材/独立元素/greenery_外围绿植_独立图层_透明底_300dpi_r83.png",
       "preview": "透明素材/缩略预览/greenery.png",
-      "bytes": 26285692,
-      "sha256": "8e70f959253601cec23e8918c9fb5268e467b9b12c7cf10aae31309c78976539",
+      "bytes": 29163110,
+      "sha256": "0ce307a92b092baa414f43b60dc6aefcfad1f491b7b8566c7b12430b06334ac9",
       "pixels": [
-        6851,
+        7146,
         4784
       ],
       "print_mm": [
-        579.9999979654947,
+        604.9999793158636,
         404.9999993218316
       ],
       "effective_ppi": [
-        300.0265527765614,
+        300.01389455459224,
         300.03358074931674
       ],
       "transparent": true,
-      "alpha_zero_fraction": 0.7330577305073253,
-      "alpha_partial_fraction": 0.2669422694926747,
+      "alpha_zero_fraction": 0.7157349177733034,
+      "alpha_partial_fraction": 0.2842650822266965,
       "source": "native layout source rendered with no page background",
       "effect_image_pixels_unchanged": false,
       "online": true
     },
     {
-      "id": "legend",
-      "title": "功能图例_独立图层",
+      "id": "courtyard",
+      "title": "中央庭院绿植_独立图层",
       "category": "独立元素",
-      "path": "透明素材/独立元素/legend_功能图例_独立图层_透明底_300dpi_r82.png",
-      "preview": "透明素材/缩略预览/legend.png",
-      "bytes": 201877,
-      "sha256": "b6b4cda48b7ca881bf74df06400ed8032f861b8bcd35befea6b69462b25103e5",
+      "path": "透明素材/独立元素/courtyard_中央庭院绿植_独立图层_透明底_300dpi_r83.png",
+      "preview": "透明素材/缩略预览/courtyard.png",
+      "bytes": 2859611,
+      "sha256": "e31e8aecb9aef9fbe620d0dc62c19d22792887f00be426e12affcc2e96babcc7",
       "pixels": [
-        2894,
-        2504
+        7146,
+        4784
       ],
       "print_mm": [
-        244.99998948838973,
-        212.0000011867947
+        604.9999793158636,
+        404.9999993218316
       ],
       "effective_ppi": [
-        300.0310332808542,
-        300.00754549034264
+        300.01389455459224,
+        300.03358074931674
       ],
       "transparent": true,
-      "alpha_zero_fraction": 0.9715420082532771,
-      "alpha_partial_fraction": 0.005825095879764457,
+      "alpha_zero_fraction": 0.9779975197200858,
+      "alpha_partial_fraction": 0.02200215851513628,
       "source": "native layout source rendered with no page background",
       "effect_image_pixels_unchanged": false,
       "online": true
     },
     {
       "id": "1F-png",
-      "title": "1F 1F_总平面与连续动线_透明_r82_300ppi",
+      "title": "1F 1F_总平面与连续动线_透明_r83_300ppi",
       "category": "图纸单件",
-      "path": "透明素材/图纸单件/1F_总平面与连续动线_透明_r82_300ppi.png",
+      "path": "透明素材/图纸单件/1F_总平面与连续动线_透明_r83_300ppi.png",
       "bytes": 864426,
       "sha256": "f3168cafdcca89b0c727accb2103d3e559d09f27aaaca83cc7b099911208cede",
       "transparent": true,
-      "preview": "透明素材/图纸单件/1F_总平面与连续动线_透明_r82_300ppi.png",
+      "preview": "透明素材/图纸单件/1F_总平面与连续动线_透明_r83_300ppi.png",
       "print_mm": [
         400,
         405
@@ -433,13 +433,13 @@
     },
     {
       "id": "1F-svg",
-      "title": "1F 1F_总平面与连续动线_透明_r82",
+      "title": "1F 1F_总平面与连续动线_透明_r83",
       "category": "图纸单件",
-      "path": "透明素材/图纸单件/1F_总平面与连续动线_透明_r82.svg",
+      "path": "透明素材/图纸单件/1F_总平面与连续动线_透明_r83.svg",
       "bytes": 276123,
       "sha256": "22655e9b6d5aca8d4bacdb16525170259374d119a274067b5a31749d8e01dfcc",
       "transparent": true,
-      "preview": "透明素材/图纸单件/1F_总平面与连续动线_透明_r82_300ppi.png",
+      "preview": "透明素材/图纸单件/1F_总平面与连续动线_透明_r83_300ppi.png",
       "print_mm": [
         400,
         405
@@ -448,55 +448,14 @@
       "online": true
     },
     {
-      "id": "2F-png",
-      "title": "2F 2F_B方案二层空间简图_透明_r82_300ppi",
-      "category": "图纸单件",
-      "path": "透明素材/图纸单件/2F_B方案二层空间简图_透明_r82_300ppi.png",
-      "bytes": 55616,
-      "sha256": "1fdfd8c404351430aa7397fa5d1d78ee9a860b6c59354e178ee255e416b21bb8",
-      "transparent": true,
-      "preview": "透明素材/图纸单件/2F_B方案二层空间简图_透明_r82_300ppi.png",
-      "print_mm": [
-        241,
-        118
-      ],
-      "source_linework_unchanged": true,
-      "pixels": [
-        2847,
-        1394
-      ],
-      "effective_ppi": [
-        300.0572614107884,
-        300.064406779661
-      ],
-      "alpha_zero_fraction": 0.47759629180002205,
-      "online": true
-    },
-    {
-      "id": "2F-svg",
-      "title": "2F 2F_B方案二层空间简图_透明_r82",
-      "category": "图纸单件",
-      "path": "透明素材/图纸单件/2F_B方案二层空间简图_透明_r82.svg",
-      "bytes": 11975,
-      "sha256": "54643b2ac655408a6ba907a2f3254e648d467430ffdf228b44c3f9a7afd3888d",
-      "transparent": true,
-      "preview": "透明素材/图纸单件/2F_B方案二层空间简图_透明_r82_300ppi.png",
-      "print_mm": [
-        241,
-        118
-      ],
-      "source_linework_unchanged": true,
-      "online": true
-    },
-    {
       "id": "AA-png",
-      "title": "AA AA_A-A 品香厅空间剖面_彩色_透明_r82_300ppi",
+      "title": "AA AA_A-A 品香厅空间剖面_彩色_透明_r83_300ppi",
       "category": "图纸单件",
-      "path": "透明素材/图纸单件/AA_A-A 品香厅空间剖面_彩色_透明_r82_300ppi.png",
+      "path": "透明素材/图纸单件/AA_A-A 品香厅空间剖面_彩色_透明_r83_300ppi.png",
       "bytes": 365710,
       "sha256": "b57199cf54709ff79a0f6605bd4f344ad6249bdb92f37c38ed77f09800412675",
       "transparent": true,
-      "preview": "透明素材/图纸单件/AA_A-A 品香厅空间剖面_彩色_透明_r82_300ppi.png",
+      "preview": "透明素材/图纸单件/AA_A-A 品香厅空间剖面_彩色_透明_r83_300ppi.png",
       "print_mm": [
         382,
         72
@@ -515,13 +474,13 @@
     },
     {
       "id": "AA-svg",
-      "title": "AA AA_A-A 品香厅空间剖面_彩色_透明_r82",
+      "title": "AA AA_A-A 品香厅空间剖面_彩色_透明_r83",
       "category": "图纸单件",
-      "path": "透明素材/图纸单件/AA_A-A 品香厅空间剖面_彩色_透明_r82.svg",
+      "path": "透明素材/图纸单件/AA_A-A 品香厅空间剖面_彩色_透明_r83.svg",
       "bytes": 330044,
       "sha256": "0e5fb53413d6fb7e83d2d31facdb373f1d9bc9c0d8df350639a154fcdefcc4f4",
       "transparent": true,
-      "preview": "透明素材/图纸单件/AA_A-A 品香厅空间剖面_彩色_透明_r82_300ppi.png",
+      "preview": "透明素材/图纸单件/AA_A-A 品香厅空间剖面_彩色_透明_r83_300ppi.png",
       "print_mm": [
         382,
         72
@@ -531,13 +490,13 @@
     },
     {
       "id": "BB-png",
-      "title": "BB BB_B-B 寻香厅空间剖面_彩色_透明_r82_300ppi",
+      "title": "BB BB_B-B 寻香厅空间剖面_彩色_透明_r83_300ppi",
       "category": "图纸单件",
-      "path": "透明素材/图纸单件/BB_B-B 寻香厅空间剖面_彩色_透明_r82_300ppi.png",
+      "path": "透明素材/图纸单件/BB_B-B 寻香厅空间剖面_彩色_透明_r83_300ppi.png",
       "bytes": 234608,
       "sha256": "bcecd2218f1efe3f1b41ca7b4cd3e01ae80bbf3db37ff9ac4c48c978c1f1d014",
       "transparent": true,
-      "preview": "透明素材/图纸单件/BB_B-B 寻香厅空间剖面_彩色_透明_r82_300ppi.png",
+      "preview": "透明素材/图纸单件/BB_B-B 寻香厅空间剖面_彩色_透明_r83_300ppi.png",
       "print_mm": [
         382,
         72
@@ -556,13 +515,13 @@
     },
     {
       "id": "BB-svg",
-      "title": "BB BB_B-B 寻香厅空间剖面_彩色_透明_r82",
+      "title": "BB BB_B-B 寻香厅空间剖面_彩色_透明_r83",
       "category": "图纸单件",
-      "path": "透明素材/图纸单件/BB_B-B 寻香厅空间剖面_彩色_透明_r82.svg",
+      "path": "透明素材/图纸单件/BB_B-B 寻香厅空间剖面_彩色_透明_r83.svg",
       "bytes": 156839,
       "sha256": "03d2addad1617435677f5c3fcb13ba95482f053ec516f38179fdc2f7974a4d15",
       "transparent": true,
-      "preview": "透明素材/图纸单件/BB_B-B 寻香厅空间剖面_彩色_透明_r82_300ppi.png",
+      "preview": "透明素材/图纸单件/BB_B-B 寻香厅空间剖面_彩色_透明_r83_300ppi.png",
       "print_mm": [
         382,
         72
@@ -572,13 +531,13 @@
     },
     {
       "id": "E1-png",
-      "title": "E1 E1_品香厅北墙室内立面_彩色_透明_r82_300ppi",
+      "title": "E1 E1_品香厅北墙室内立面_彩色_透明_r83_300ppi",
       "category": "图纸单件",
-      "path": "透明素材/图纸单件/E1_品香厅北墙室内立面_彩色_透明_r82_300ppi.png",
+      "path": "透明素材/图纸单件/E1_品香厅北墙室内立面_彩色_透明_r83_300ppi.png",
       "bytes": 275438,
       "sha256": "1ebeacbe2589b5b3ed523ca6c220dd165674156f2fda24017c75fa3fd48a5c4e",
       "transparent": true,
-      "preview": "透明素材/图纸单件/E1_品香厅北墙室内立面_彩色_透明_r82_300ppi.png",
+      "preview": "透明素材/图纸单件/E1_品香厅北墙室内立面_彩色_透明_r83_300ppi.png",
       "print_mm": [
         382,
         72
@@ -597,13 +556,13 @@
     },
     {
       "id": "E1-svg",
-      "title": "E1 E1_品香厅北墙室内立面_彩色_透明_r82",
+      "title": "E1 E1_品香厅北墙室内立面_彩色_透明_r83",
       "category": "图纸单件",
-      "path": "透明素材/图纸单件/E1_品香厅北墙室内立面_彩色_透明_r82.svg",
+      "path": "透明素材/图纸单件/E1_品香厅北墙室内立面_彩色_透明_r83.svg",
       "bytes": 165042,
       "sha256": "078f73289d12d8cd99d3478b224057ca215398a62221022c4a0409ad2dfff852",
       "transparent": true,
-      "preview": "透明素材/图纸单件/E1_品香厅北墙室内立面_彩色_透明_r82_300ppi.png",
+      "preview": "透明素材/图纸单件/E1_品香厅北墙室内立面_彩色_透明_r83_300ppi.png",
       "print_mm": [
         382,
         72
@@ -613,13 +572,13 @@
     },
     {
       "id": "E2-png",
-      "title": "E2 E2_寻香厅北墙室内立面_彩色_透明_r82_300ppi",
+      "title": "E2 E2_寻香厅北墙室内立面_彩色_透明_r83_300ppi",
       "category": "图纸单件",
-      "path": "透明素材/图纸单件/E2_寻香厅北墙室内立面_彩色_透明_r82_300ppi.png",
+      "path": "透明素材/图纸单件/E2_寻香厅北墙室内立面_彩色_透明_r83_300ppi.png",
       "bytes": 106135,
       "sha256": "bbc6678ee6326772cdecb74e43c1c1aca02c7d08449745008e3259d355de5f39",
       "transparent": true,
-      "preview": "透明素材/图纸单件/E2_寻香厅北墙室内立面_彩色_透明_r82_300ppi.png",
+      "preview": "透明素材/图纸单件/E2_寻香厅北墙室内立面_彩色_透明_r83_300ppi.png",
       "print_mm": [
         382,
         72
@@ -638,13 +597,13 @@
     },
     {
       "id": "E2-svg",
-      "title": "E2 E2_寻香厅北墙室内立面_彩色_透明_r82",
+      "title": "E2 E2_寻香厅北墙室内立面_彩色_透明_r83",
       "category": "图纸单件",
-      "path": "透明素材/图纸单件/E2_寻香厅北墙室内立面_彩色_透明_r82.svg",
+      "path": "透明素材/图纸单件/E2_寻香厅北墙室内立面_彩色_透明_r83.svg",
       "bytes": 66489,
       "sha256": "d1b1ad3e31b6b28360cc01147edf2085ed66107b1ba838d853c1bad35592aa10",
       "transparent": true,
-      "preview": "透明素材/图纸单件/E2_寻香厅北墙室内立面_彩色_透明_r82_300ppi.png",
+      "preview": "透明素材/图纸单件/E2_寻香厅北墙室内立面_彩色_透明_r83_300ppi.png",
       "print_mm": [
         382,
         72
@@ -656,7 +615,7 @@
       "id": "asset-title",
       "title": "莞香入庭_书法题名",
       "category": "独立元素",
-      "path": "透明素材/独立元素/莞香入庭_书法题名_透明原始增强_r82.png",
+      "path": "透明素材/独立元素/莞香入庭_书法题名_透明原始增强_r83.png",
       "preview": "透明素材/缩略预览/asset-title.png",
       "bytes": 10761301,
       "sha256": "de838abf976dd4ba0a4fcf6cbf0372d070a47378bc2e2fc4ec61afc7225e53f6",
@@ -681,7 +640,7 @@
       "id": "asset-personas",
       "title": "四类人群_群像无字",
       "category": "独立元素",
-      "path": "透明素材/独立元素/四类人群_群像无字_透明原始增强_r82.png",
+      "path": "透明素材/独立元素/四类人群_群像无字_透明原始增强_r83.png",
       "preview": "透明素材/缩略预览/asset-personas.png",
       "bytes": 17429258,
       "sha256": "c734f509e83bab3c9381be06e436271d531343e0a19d556ea2389de2d6b3f9e5",
@@ -706,7 +665,7 @@
       "id": "asset-process",
       "title": "香材香器_插图元素",
       "category": "独立元素",
-      "path": "透明素材/独立元素/香材香器_插图元素_透明原始增强_r82.png",
+      "path": "透明素材/独立元素/香材香器_插图元素_透明原始增强_r83.png",
       "preview": "透明素材/缩略预览/asset-process.png",
       "bytes": 20713987,
       "sha256": "640f31e7c19c73930edb33d2ee73f6e594759c190966453426d18c013a126b63",
@@ -731,7 +690,7 @@
       "id": "asset-explosion_wide",
       "title": "建筑爆炸_无文字",
       "category": "独立元素",
-      "path": "透明素材/独立元素/建筑爆炸_无文字_透明原始增强_r82.png",
+      "path": "透明素材/独立元素/建筑爆炸_无文字_透明原始增强_r83.png",
       "preview": "透明素材/缩略预览/asset-explosion_wide.png",
       "bytes": 31851670,
       "sha256": "d571048163c6c517610d079c587b70aea409e5359b1603e20b606d4609f5dff4",
@@ -754,9 +713,9 @@
     },
     {
       "id": "asset-plan_greenery",
-      "title": "园林绿植_原始透明层",
+      "title": "外围园林绿植_原始透明层",
       "category": "独立元素",
-      "path": "透明素材/独立元素/园林绿植_原始透明层_透明原始增强_r82.png",
+      "path": "透明素材/独立元素/外围园林绿植_原始透明层_透明原始增强_r83.png",
       "preview": "透明素材/缩略预览/asset-plan_greenery.png",
       "bytes": 22015493,
       "sha256": "10ef2310cf96d839dae0276892084f2964c3158a05128c5980ea3ab972005eaf",
@@ -775,6 +734,47 @@
       "transparent": true,
       "alpha_zero_fraction": 0.5461738147656368,
       "source": "Existing true-alpha source preserved, AI x4 enhanced",
+      "online": true
+    },
+    {
+      "id": "asset-courtyard_greenery",
+      "title": "中央庭院绿植_原始透明层",
+      "category": "独立元素",
+      "path": "透明素材/独立元素/中央庭院绿植_原始透明层_透明原始增强_r83.png",
+      "preview": "透明素材/缩略预览/asset-courtyard_greenery.png",
+      "bytes": 25207744,
+      "sha256": "7e19560363f74f7cc2922fb0c67ce79be6855b0b5930612680d55dc44003bb81",
+      "pixels": [
+        4196,
+        6000
+      ],
+      "print_mm": [
+        355.2613333333333,
+        508.0
+      ],
+      "effective_ppi": [
+        300,
+        300
+      ],
+      "transparent": true,
+      "alpha_zero_fraction": 0.494746981251986,
+      "source": "Existing true-alpha source preserved, AI x4 enhanced",
+      "online": true
+    },
+    {
+      "id": "location-svg",
+      "title": "真实区位地图_可编辑矢量",
+      "category": "图纸单件",
+      "path": "透明素材/图纸单件/02_真实区位地图_透明矢量_r83.svg",
+      "preview": "透明素材/缩略预览/02.png",
+      "bytes": 193111,
+      "sha256": "2e38a9a36801d608140c7eccf7adf9f4f4b6db81d1a0b8e16eeb634d90cb0396",
+      "print_mm": [
+        530,
+        113
+      ],
+      "transparent": true,
+      "source": "OpenStreetMap geometry and documented study area; no invented site point",
       "online": true
     }
   ],
