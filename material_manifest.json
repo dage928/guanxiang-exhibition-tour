@@ -1,5 +1,5 @@
 {
-  "version": "r98",
+  "version": "r102",
   "files": [
     {
       "id": "01",
@@ -78,33 +78,6 @@
       "transparent": true,
       "alpha_zero_fraction": 0.9271706580689593,
       "alpha_partial_fraction": 0.05179249285687933,
-      "source": "native layout source rendered with no page background",
-      "effect_source_unchanged": false,
-      "layout_changed": false
-    },
-    {
-      "id": "04",
-      "title": "插画人群分析",
-      "category": "板块",
-      "path": "透明素材/板块/04_插画人群分析_透明底_300dpi_r98.png",
-      "preview": "透明素材/缩略预览/04.png",
-      "bytes": 2697782,
-      "sha256": "f7c458c336085ee12d2e44ca2cf6d9d5c21e351e935bffe826462bb316dfb86f",
-      "pixels": [
-        3497,
-        1701
-      ],
-      "print_mm": [
-        295.99999881320525,
-        143.99999593098957
-      ],
-      "effective_ppi": [
-        300.0804066085603,
-        300.0375084781649
-      ],
-      "transparent": true,
-      "alpha_zero_fraction": 0.7379556206487227,
-      "alpha_partial_fraction": 0.06957840910752931,
       "source": "native layout source rendered with no page background",
       "effect_source_unchanged": false,
       "layout_changed": false
@@ -827,30 +800,6 @@
       "source": "Existing true-alpha source preserved, AI x4 enhanced"
     },
     {
-      "id": "asset-personas_mono",
-      "title": "五类人群_黑灰线描米白",
-      "category": "独立元素",
-      "path": "透明素材/独立元素/五类人群_黑灰线描米白_透明原图_r98.png",
-      "preview": "透明素材/缩略预览/asset-personas_mono.png",
-      "bytes": 1317577,
-      "sha256": "77a0f44449a53ecc10d801bdbcd53edbf557b944ca578ab8c35d83cb750816b7",
-      "pixels": [
-        2172,
-        724
-      ],
-      "print_mm": [
-        183.896,
-        61.29866666666667
-      ],
-      "effective_ppi": [
-        300,
-        300
-      ],
-      "transparent": true,
-      "alpha_zero_fraction": 0.641892544997609,
-      "source": "Built-in image generation or targeted edit, original true alpha"
-    },
-    {
       "id": "asset-plum_decor",
       "title": "梅枝_透明装饰",
       "category": "独立元素",
@@ -936,6 +885,156 @@
       ],
       "transparent": true,
       "source": "OpenStreetMap geometry and documented study area; no invented site point"
+    },
+    {
+      "id": "04",
+      "title": "人群需求分析_已审核通过",
+      "category": "板块",
+      "path": "透明素材/板块/04_人群需求分析_透明底_300dpi_r102.png",
+      "preview": "透明素材/缩略预览/04.png",
+      "bytes": 1746829,
+      "sha256": "f774b6af94ab90647745a325333ba52bda2d6fb8dc19e64c7e5f49ad83ecc190",
+      "pixels": [
+        3497,
+        1949
+      ],
+      "print_mm": [
+        296,
+        165
+      ],
+      "transparent": true,
+      "effective_ppi": [
+        300.0804054054054,
+        300.02787878787876
+      ],
+      "source": "Approved r101 vector composition uniformly placed in 04"
+    },
+    {
+      "id": "crowd-01_walk_行走_透明",
+      "title": "01_walk_行走_透明",
+      "category": "独立元素",
+      "path": "透明素材/独立元素/01_walk_行走_透明.png",
+      "preview": "透明素材/缩略预览/crowd-01_walk_行走_透明.png",
+      "bytes": 678429,
+      "sha256": "0be4ea7b0af8d3554f0a801ee639f1dff40fe465d7e925ff82f50e74ec221949",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "Original approved RGBA, unmodified"
+    },
+    {
+      "id": "crowd-02_stay_停留_透明",
+      "title": "02_stay_停留_透明",
+      "category": "独立元素",
+      "path": "透明素材/独立元素/02_stay_停留_透明.png",
+      "preview": "透明素材/缩略预览/crowd-02_stay_停留_透明.png",
+      "bytes": 606404,
+      "sha256": "ba84ce83c2ebcda1e0929f4b407aee66ba903dcf8daba124cad56a81143f9fbc",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "Original approved RGBA, unmodified"
+    },
+    {
+      "id": "crowd-03_gather_聚集_透明",
+      "title": "03_gather_聚集_透明",
+      "category": "独立元素",
+      "path": "透明素材/独立元素/03_gather_聚集_透明.png",
+      "preview": "透明素材/缩略预览/crowd-03_gather_聚集_透明.png",
+      "bytes": 1567532,
+      "sha256": "9597294dfe6d5d31298c855f13fb3b54e0b1047d2c3fea6a1b1623662bfe5a50",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "Original approved RGBA, unmodified"
+    },
+    {
+      "id": "crowd-04_social_社交_透明",
+      "title": "04_social_社交_透明",
+      "category": "独立元素",
+      "path": "透明素材/独立元素/04_social_社交_透明.png",
+      "preview": "透明素材/缩略预览/crowd-04_social_社交_透明.png",
+      "bytes": 1114438,
+      "sha256": "c70f5923d78bcfd3e290b66066c9e0080afbcf11b6c515080840436c3386f5b5",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "Original approved RGBA, unmodified"
+    },
+    {
+      "id": "crowd-05_rest_休憩_透明",
+      "title": "05_rest_休憩_透明",
+      "category": "独立元素",
+      "path": "透明素材/独立元素/05_rest_休憩_透明.png",
+      "preview": "透明素材/缩略预览/crowd-05_rest_休憩_透明.png",
+      "bytes": 1208963,
+      "sha256": "a74ec5324d9a0423c391b2bc48a3f5de38c7f401c2994227853048c597d3236d",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "Original approved RGBA, unmodified"
+    },
+    {
+      "id": "crowd-06_family_亲子_透明",
+      "title": "06_family_亲子_透明",
+      "category": "独立元素",
+      "path": "透明素材/独立元素/06_family_亲子_透明.png",
+      "preview": "透明素材/缩略预览/crowd-06_family_亲子_透明.png",
+      "bytes": 1745073,
+      "sha256": "611b33f2b6fe11c31a992cfb37b3e601b612b957676ee7311d759e3856949587",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "Original approved RGBA, unmodified"
+    },
+    {
+      "id": "crowd-07_vendor_摆摊_透明",
+      "title": "07_vendor_摆摊_透明",
+      "category": "独立元素",
+      "path": "透明素材/独立元素/07_vendor_摆摊_透明.png",
+      "preview": "透明素材/缩略预览/crowd-07_vendor_摆摊_透明.png",
+      "bytes": 1187464,
+      "sha256": "19e29f735660ba28a0890bc126c7a538a707002c2d6ba9f09fb8357d1f8cd558",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "Original approved RGBA, unmodified"
+    },
+    {
+      "id": "approved-crowd-png",
+      "title": "已通过的人群分析_独立大字版",
+      "category": "独立元素",
+      "path": "透明素材/独立元素/GX_人群需求_参考构图_透明底_r101.png",
+      "preview": "人群分析大字版/审核/review_web.png",
+      "bytes": 2762124,
+      "sha256": "97506d0f92876fbf1e9803c9fe4e263f06364922e095b93164955b900cbe1513",
+      "transparent": true,
+      "source": "Approved r101 original, unchanged"
+    },
+    {
+      "id": "approved-crowd-svg",
+      "title": "已通过的人群分析_独立大字版",
+      "category": "独立元素",
+      "path": "透明素材/独立元素/GX_人群需求_可编辑透明排版_r101.svg",
+      "preview": "人群分析大字版/审核/review_web.png",
+      "bytes": 11579264,
+      "sha256": "f398708b3436f1887a66fc2e6baee8fdbe77bd14221aeed795b06f1a4dff666d",
+      "transparent": true,
+      "source": "Approved r101 original, unchanged"
     }
   ],
   "packages": [],
@@ -1008,5 +1107,9 @@
       "unchanged": true
     }
   ],
-  "package_online": false
+  "approval": {
+    "source": "M117_r101",
+    "status": "approved",
+    "integrated_into": "04"
+  }
 }
