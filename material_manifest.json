@@ -1,5 +1,5 @@
 {
-  "version": "r102",
+  "version": "r103",
   "files": [
     {
       "id": "01",
@@ -888,12 +888,12 @@
     },
     {
       "id": "04",
-      "title": "人群需求分析_已审核通过",
+      "title": "人群需求分析_去说明小字",
       "category": "板块",
-      "path": "透明素材/板块/04_人群需求分析_透明底_300dpi_r102.png",
+      "path": "透明素材/板块/04_人群需求分析_透明底_300dpi_r103.png",
       "preview": "透明素材/缩略预览/04.png",
-      "bytes": 1746829,
-      "sha256": "f774b6af94ab90647745a325333ba52bda2d6fb8dc19e64c7e5f49ad83ecc190",
+      "bytes": 1601560,
+      "sha256": "ea3e9886af640b36325624fa5e1f8c92a73eececd11dd9c344114fbc05e0e7a0",
       "pixels": [
         3497,
         1949
@@ -907,7 +907,7 @@
         300.0804054054054,
         300.02787878787876
       ],
-      "source": "Approved r101 vector composition uniformly placed in 04"
+      "source": "r102 composition with body descriptions removed"
     },
     {
       "id": "crowd-01_walk_行走_透明",
@@ -1016,25 +1016,25 @@
     },
     {
       "id": "approved-crowd-png",
-      "title": "已通过的人群分析_独立大字版",
+      "title": "人群分析_无说明小字_独立版",
       "category": "独立元素",
-      "path": "透明素材/独立元素/GX_人群需求_参考构图_透明底_r101.png",
-      "preview": "人群分析大字版/审核/review_web.png",
-      "bytes": 2762124,
-      "sha256": "97506d0f92876fbf1e9803c9fe4e263f06364922e095b93164955b900cbe1513",
+      "path": "透明素材/独立元素/GX_人群需求_简洁构图_透明底_r103.png",
+      "preview": "人群分析独立版/审核/review_web.png",
+      "bytes": 2556886,
+      "sha256": "c7a0137f70c0d1691d2ce424e3601fd87d26a4211861488767a119cf6ba868a4",
       "transparent": true,
-      "source": "Approved r101 original, unchanged"
+      "source": "Vector composition with four group titles and ten labels retained"
     },
     {
       "id": "approved-crowd-svg",
-      "title": "已通过的人群分析_独立大字版",
+      "title": "人群分析_无说明小字_独立版",
       "category": "独立元素",
-      "path": "透明素材/独立元素/GX_人群需求_可编辑透明排版_r101.svg",
-      "preview": "人群分析大字版/审核/review_web.png",
-      "bytes": 11579264,
-      "sha256": "f398708b3436f1887a66fc2e6baee8fdbe77bd14221aeed795b06f1a4dff666d",
+      "path": "透明素材/独立元素/GX_人群需求_可编辑透明排版_r103.svg",
+      "preview": "人群分析独立版/审核/review_web.png",
+      "bytes": 11575870,
+      "sha256": "9ea1a6a09cc4c1b3a149a71aeb858873b70abefe291de12c5ac66ac5d45eb762",
       "transparent": true,
-      "source": "Approved r101 original, unchanged"
+      "source": "Vector composition with four group titles and ten labels retained"
     }
   ],
   "packages": [],
@@ -1108,8 +1108,8 @@
     }
   ],
   "approval": {
-    "source": "M117_r101",
-    "status": "approved",
+    "source": "M117_r101 approved, r103 text removal requested",
+    "status": "implemented as instructed",
     "integrated_into": "04"
   }
 }
