@@ -1,5 +1,5 @@
 {
-  "version": "r105",
+  "version": "r106",
   "files": [
     {
       "id": "01",
@@ -219,30 +219,30 @@
     },
     {
       "id": "10",
-      "title": "紧凑彩色立面与剖面",
+      "title": "室内立面与剖面_调位适配",
       "category": "板块",
-      "path": "透明素材/板块/10_紧凑彩色立面与剖面_透明底_300dpi_r98.png",
+      "path": "透明素材/板块/10_室内立面与剖面_调位适配_透明底_300dpi_r106.png",
       "preview": "透明素材/缩略预览/10.png",
-      "bytes": 544088,
-      "sha256": "e61e0831a3a6f9d42e0c407b0e28d8cf3970d27464df3bff43ae2ea54c922b77",
+      "bytes": 444396,
+      "sha256": "640ffd33bda2187a24a376501e285254120899a96bd6605ace011c9cd5195a6f",
       "pixels": [
-        5670,
-        1926
+        4725,
+        1914
       ],
       "print_mm": [
-        479.99998643663196,
-        162.99999898274737
+        400,
+        162
       ],
       "effective_ppi": [
-        300.0375084781649,
-        300.12515524725825
+        300.0375,
+        300.09629629629626
       ],
       "transparent": true,
-      "alpha_zero_fraction": 0.6039614776721042,
-      "alpha_partial_fraction": 0.005818365960283579,
-      "source": "native layout source rendered with no page background",
+      "alpha_zero_fraction": 0.6647865629474825,
+      "alpha_partial_fraction": 0.006296904457823998,
+      "source": "Unchanged native elevations and sections, uniformly scaled to the right column after swapping modules 10 and 14",
       "effect_source_unchanged": false,
-      "layout_changed": false
+      "layout_changed": true
     },
     {
       "id": "11",
@@ -3380,5 +3380,48 @@
       }
     ],
     "geometry_changed": false
+  },
+  "layout_update": {
+    "module14": {
+      "old_anchor_mm": [
+        850,
+        653
+      ],
+      "new_anchor_mm": [
+        350,
+        512
+      ],
+      "size_mm": [
+        400,
+        162
+      ],
+      "scale": 1,
+      "form_unchanged": true
+    },
+    "module10": {
+      "old_anchor_mm": [
+        350,
+        512
+      ],
+      "new_anchor_mm": [
+        850,
+        653
+      ],
+      "header_scale": 1,
+      "drawing_scale": [
+        0.8333333333333334,
+        0.8333333333333334
+      ],
+      "drawing_anchor_mm": [
+        850,
+        699
+      ],
+      "panel_size_mm": [
+        400,
+        162
+      ]
+    },
+    "other_modules_moved": false,
+    "numbering_unchanged": true
   }
 }
