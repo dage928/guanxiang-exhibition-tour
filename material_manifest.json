@@ -1,5 +1,5 @@
 {
-  "version": "r104",
+  "version": "r105",
   "files": [
     {
       "id": "01",
@@ -327,12 +327,12 @@
     },
     {
       "id": "14",
-      "title": "功能分区_参考配色与模型底图",
+      "title": "功能分区_浅黄与白色动线",
       "category": "板块",
-      "path": "透明素材/板块/14_功能分区_参考配色与底图_透明底_300dpi_r104.png",
+      "path": "透明素材/板块/14_功能分区_参考配色与底图_透明底_300dpi_r105.png",
       "preview": "透明素材/缩略预览/14.png",
-      "bytes": 436693,
-      "sha256": "36501fd33d92bb6075562a8e7dc7a1ef67d06fb9bad9dba87b8f02e9163c86d2",
+      "bytes": 427665,
+      "sha256": "b2382a5e94828eabfe1812295e69c802529e869d749147aa91d2f1321d100ebb",
       "pixels": [
         4725,
         1914
@@ -347,8 +347,8 @@
       ],
       "transparent": true,
       "alpha_zero_fraction": 0.8204950434835492,
-      "alpha_partial_fraction": 0.009243612921773841,
-      "source": "Actual unchanged project floor polygons and native model projection; five reference-matched muted function colors",
+      "alpha_partial_fraction": 0.008968060462313335,
+      "source": "r104 native zoning diagram; culture fill pale yellow, route and arrows white",
       "effect_source_unchanged": false,
       "layout_changed": true
     },
@@ -1124,7 +1124,7 @@
       },
       {
         "name": "文化展示区",
-        "color": "#A5A5A0",
+        "color": "#E8DEAF",
         "zones": [
           "HIS",
           "BOT",
@@ -1162,8 +1162,8 @@
         "note": "01 序厅 · 10 尾厅出口"
       }
     ],
-    "circulation_accent": "#E5DCAD",
-    "source": "User-attached low-resolution palette reference, visually matched sRGB values",
+    "circulation_accent": "#FFFFFF",
+    "source": "r104 composition; user requests gray-to-pale-yellow and all circulation lines/arrows to white",
     "base_plan_source": "r43 design_data + model_projection, existing r98 floor_drawings",
     "zones": [
       {
