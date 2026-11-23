@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f2e9"><title>两厅天花与暖光 · 莞香入庭</title>
+<style>
+:root{color-scheme:light;--ink:#28382f;--sub:#5e6358;--paper:#f6f3eb;--line:#cec9ba;--brown:#684c34;--serif:"Songti SC","SimSun",serif;font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+*{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}button,input{font:inherit}button{cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #875c39;outline-offset:3px}
+header{display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding:18px clamp(16px,3.8vw,72px)}.brand{font:600 25px/1.3 var(--serif);letter-spacing:.12em}.back{font-size:14px}
+main{max-width:1880px;margin:auto;padding:clamp(24px,3.3vw,60px) clamp(16px,3.8vw,72px) 40px}.intro{margin-bottom:28px}h1,h2{font-family:var(--serif);font-weight:600;margin:0}h1{font-size:clamp(33px,4vw,60px);letter-spacing:.045em}h2{font-size:clamp(22px,2.1vw,32px);letter-spacing:.06em}.intro p,.note,.links{font-size:14px;line-height:1.65;color:var(--sub)}.intro p{margin:.65em 0 0}
+.rooms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(20px,3vw,55px);row-gap:36px}.room{border-top:1px solid var(--line);padding-top:16px;min-width:0}.topline,.links{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}.topline a{font-size:14px;color:var(--brown)}.note{margin:8px 0 14px}
+.picture{position:relative;width:100%;aspect-ratio:8/5;overflow:hidden;background:#d9d1c1;isolation:isolate;--share:100%}.picture img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:contain}.after{clip-path:inset(0 calc(100% - var(--share)) 0 0)}.splitline{position:absolute;top:0;bottom:0;left:var(--share);width:2px;background:white;box-shadow:0 0 3px #242017}.splitline:after{position:absolute;content:'↔';top:51%;left:50%;transform:translate(-50%,-50%);background:var(--paper);border:1px solid #a59176;color:#584633;width:32px;height:32px;display:grid;place-items:center;border-radius:50%;font-size:18px}
+.picture input{position:absolute;inset:0;margin:0;width:100%;height:100%;cursor:ew-resize;opacity:0;touch-action:pan-y}.picture:has(input:focus-visible){outline:3px solid #94633b;outline-offset:3px}.picture[tabindex]{outline-offset:3px}
+.switch{display:flex;flex-wrap:wrap;align-items:center;gap:3px;margin:12px 0 10px}.switch button{background:transparent;color:var(--ink);border:1px solid #c3bcac;padding:6px 14px;min-height:35px;border-radius:2px;font-size:14px}.switch button[aria-pressed=true]{background:#3b493f;color:#fff;border-color:#3b493f}.switch button:hover:not([aria-pressed=true]){background:#e5e0d3}.links{justify-content:flex-start;gap:20px;font-size:13px}.links a{color:var(--sub)}.sr{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap}[hidden]{display:none!important}
+@media(max-width:820px){.rooms{grid-template-columns:1fr}.intro{margin-bottom:22px}.topline a{min-height:26px}.switch button{min-height:40px}}
+</style>
+</head>
+<body>
+<header><span class="brand">莞香入庭</span><a class="back" href="./">全馆三维导览 ↗</a></header>
+<main><div class="intro"><h1>两厅天花与暖光</h1><p>每组前后图采用相同机位与曝光。选择「左右对照」，拖动分界线查看细节。</p></div>
+<div class="rooms"><section class="room" id="main"><div class="topline"><h2>品香主厅</h2><a href="./?room=MAIN">进入三维环视 ↗</a></div><p class="note">圆角平顶沿墙收边，柜内光和洗墙光勾出香器轮廓。</p>
+    <div class="picture"><img width="2400" height="1500" src="proof/main-before.jpg" alt="品香主厅原方案"><img width="2400" height="1500" class="after" src="proof/main-after.jpg" alt="品香主厅圆角天花与暖光样板">
+    <span class="splitline" hidden></span><input type="range" min="0" max="100" value="50" aria-label="品香主厅左右对比分界线" hidden></div>
+    <div class="switch" role="group" aria-label="品香主厅效果图切换"><button type="button" data-mode="before" aria-pressed="false">原方案</button>
+    <button type="button" data-mode="compare" aria-pressed="false">左右对照</button><button type="button" data-mode="after" aria-pressed="true">暖光样板</button></div>
+    <span class="sr" aria-live="polite">暖光样板</span><div class="links"><a href="proof/main-before.jpg">原方案原图</a><a href="proof/main-after.jpg">暖光样板原图</a></div></section><section class="room" id="cra"><div class="topline"><h2>传香工坊</h2><a href="./?room=CRA">进入三维环视 ↗</a></div><p class="note">一盏深木框方灯对准八席手作桌，米白灯罩柔化桌面投影。</p>
+    <div class="picture"><img width="2400" height="1500" src="proof/cra-before.jpg" alt="传香工坊原方案"><img width="2400" height="1500" class="after" src="proof/cra-after.jpg" alt="传香工坊圆角天花与暖光样板">
+    <span class="splitline" hidden></span><input type="range" min="0" max="100" value="50" aria-label="传香工坊左右对比分界线" hidden></div>
+    <div class="switch" role="group" aria-label="传香工坊效果图切换"><button type="button" data-mode="before" aria-pressed="false">原方案</button>
+    <button type="button" data-mode="compare" aria-pressed="false">左右对照</button><button type="button" data-mode="after" aria-pressed="true">暖光样板</button></div>
+    <span class="sr" aria-live="polite">暖光样板</span><div class="links"><a href="proof/cra-before.jpg">原方案原图</a><a href="proof/cra-after.jpg">暖光样板原图</a></div></section></div></main>
+<script>
+document.querySelectorAll('.room').forEach(room=>{
+  const frame=room.querySelector('.picture'),range=frame.querySelector('input'),line=frame.querySelector('.splitline');
+  const buttons=Array.from(room.querySelectorAll('.switch button')),status=room.querySelector('.sr');
+  const values={after:100,compare:50,before:0};
+  function setPercent(p){frame.style.setProperty('--share',p+'%');range.value=p;range.setAttribute('aria-valuetext','暖光样板占 '+p+'%');}
+  buttons.forEach(button=>button.addEventListener('click',()=>{
+    const mode=button.dataset.mode;
+    buttons.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+    setPercent(values[mode]);range.hidden=line.hidden=mode!=='compare';
+    status.textContent=mode==='compare'?'左侧暖光样板，右侧原方案':button.textContent;
+  }));
+  range.addEventListener('input',()=>setPercent(range.value));
+});
+</script>
+</body></html>

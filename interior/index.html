@@ -21,12 +21,16 @@ footer{height:36px;padding:0 clamp(15px,2.6vw,48px);display:flex;align-items:cen
 @media(max-width:760px){.mast{height:60px;gap:12px}.mast h1{font-size:14px}.mast-rule{height:15px}.layout{display:flex;flex-direction:column;height:calc(100vh - 92px);height:calc(100dvh - 92px);min-height:380px}.rail{display:none}.mobile-rooms{display:flex;align-items:center;gap:12px;padding:7px 15px;border-bottom:1px solid var(--line);font-size:14px}.mobile-rooms label{color:var(--subtle)}.mobile-rooms select{flex:1;max-width:360px;min-width:0;height:35px;border:1px solid #aeaf9f;background:#faf8f1;padding:3px 9px;border-radius:2px}.stage{flex:1}.place-strip{inset:10px 9px auto 10px}.place{padding:6px 9px}.place h2{font-size:19px}.place p{display:none}.modes button{font-size:13px;padding:7px 8px}.scene-tools{bottom:11px;right:9px}.scene-tools button{min-height:38px;font-size:13px;padding:7px 9px}.zoom-group button{font-size:20px;min-width:35px}.ceiling{left:9px;bottom:62px;padding:5px 8px;font-size:12px}footer{height:32px;font-size:12px}.foot-title{display:none}}
 @media(max-height:560px) and (min-width:761px){.mast{height:48px}.layout{height:calc(100dvh - 78px);min-height:300px}.rail{padding-top:10px}.place-strip{top:8px}.scene-tools,.ceiling{bottom:9px}footer{height:30px}}
 @media(prefers-reduced-motion:reduce){.spinner{animation:none}}
+.mast-links{margin-left:auto;display:flex;gap:18px;align-items:center;font-size:14px;white-space:nowrap}.mast-links a{text-decoration:none}.mast-links a:hover{text-decoration:underline}
+.sample-switch{padding:3px;gap:0}.sample-switch button{cursor:pointer;color:inherit;border:0;background:transparent;padding:9px 13px;border-radius:2px;font-size:14px}.sample-switch button[aria-pressed=true]{color:white;background:#594837}
+@media(max-width:660px){.mast{gap:9px}.mast-links{gap:12px;font-size:13px}.sample-switch{padding:3px}.sample-switch button{font-size:13px;padding:8px 11px}}
+@media(max-width:420px){.mast h1,.mast-rule{display:none}}
 </style>
 </head>
 <body>
 <header class="mast">
   <div class="brand">莞香入庭</div><span class="mast-rule"></span><h1>室内三维导览</h1>
-  <a class="back" href="../#board">完整展板<span aria-hidden="true"> ↗</span></a>
+  <nav class="mast-links"><a href="review.html">同机位对比</a><a href="../#board">完整展板<span aria-hidden="true"> ↗</span></a></nav>
 </header>
 <main class="layout">
   <aside class="rail" aria-label="空间导览">
@@ -52,12 +56,16 @@ footer{height:36px;padding:0 clamp(15px,2.6vw,48px);display:flex;align-items:cen
       <button id="reset" type="button">复位</button><button id="auto" type="button" aria-pressed="false">自动环绕</button><button id="full" type="button">全屏</button>
     </div>
     <label id="ceiling-control" class="ceiling"><input id="ceiling" type="checkbox">寻香厅天花</label>
+    <div id="sample-control" class="ceiling sample-switch" role="group" aria-label="切换同机位灯光方案" hidden>
+      <button id="sample-before" type="button" aria-pressed="false">原方案</button>
+      <button id="sample-after" type="button" aria-pressed="true">暖光样板</button>
+    </div>
     <span id="announcement" class="sr" aria-live="polite"></span>
   </section>
 </main>
 <footer><span id="gesture">拖动旋转 · 滚轮缩放 · 右键平移</span><span class="foot-title">莞香文化展馆</span></footer>
 <noscript>浏览三维场景需要启用 JavaScript。</noscript>
 
-<script src="app.js"></script>
+<script src="app.js?v=r130"></script>
 </body>
 </html>
