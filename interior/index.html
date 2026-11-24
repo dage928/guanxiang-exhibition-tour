@@ -38,7 +38,8 @@ body.expanded{overflow:hidden}
 #camera{display:none;position:absolute;inset:0;perspective-origin:50% 50%;pointer-events:none;background:#454638;overflow:hidden}
 #stage[data-mode="panorama"] #camera{display:block}
 #world{position:absolute;top:50%;left:50%;width:0;height:0;transform-style:preserve-3d}
-.face{position:absolute;left:-384px;top:-384px;width:768px;height:768px;background-size:300% 200%;background-repeat:no-repeat;backface-visibility:hidden}
+.face{position:absolute;left:-1024px;top:-1024px;width:2048px;height:2048px;background-size:300% 200%;background-repeat:no-repeat;backface-visibility:hidden;overflow:hidden}
+.orbit-detail{position:absolute;top:0;left:0;width:100%;height:100%;max-width:none;display:block;pointer-events:none}
 .expand{position:absolute;right:10px;top:10px;color:#fff;border-color:#ffffff68;background:#17231b99;width:42px;min-height:40px;padding:7px;display:grid;place-items:center}
 .expand:hover{background:#19241bdd}
 .expand svg{width:19px;height:19px}
@@ -49,6 +50,9 @@ figcaption{justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:12px
 .primary{background:var(--ink);color:#fff;border-color:var(--ink)}
 .primary:hover{background:#414e40}
 #hint{font-size:13px;color:var(--muted);line-height:1.55}
+.view-hint{display:flex;align-items:center;gap:5px 10px;flex-wrap:wrap;font-size:13px}
+#quality{color:var(--ink)}
+#retryQuality{padding:0 8px}
 .tour-nav{margin-top:clamp(18px,3vh,32px);border-block:1px solid var(--rule);justify-content:space-between;gap:12px}
 .tour-nav button{display:flex;align-items:center;gap:12px;text-align:left;border:0;border-radius:0;padding:11px 4px;background:transparent}
 .tour-nav button:last-child{text-align:right}
@@ -83,7 +87,7 @@ dialog:not([open]){display:none}
   <figure>
     <div id="stage" tabindex="0" aria-label="展厅影像，可用方向键浏览">
       <img id="photo" alt="" fetchpriority="high" draggable="false">
-      <div id="camera" aria-hidden="true"><div id="world"><div class="face" style="transform:rotateY(0deg) translateZ(-383.85px);background-position:0% 0%"></div><div class="face" style="transform:rotateY(-90deg) translateZ(-383.85px);background-position:50% 0%"></div><div class="face" style="transform:rotateY(180deg) translateZ(-383.85px);background-position:100% 0%"></div><div class="face" style="transform:rotateY(90deg) translateZ(-383.85px);background-position:0% 100%"></div><div class="face" style="transform:rotateX(-90deg) translateZ(-383.85px);background-position:50% 100%"></div><div class="face" style="transform:rotateX(90deg) translateZ(-383.85px);background-position:100% 100%"></div></div></div>
+      <div id="camera" aria-hidden="true"><div id="world"><div class="face" style="transform:rotateY(0deg) translateZ(-1023.88px);background-position:0% 0%"></div><div class="face" style="transform:rotateY(-90deg) translateZ(-1023.88px);background-position:50% 0%"></div><div class="face" style="transform:rotateY(180deg) translateZ(-1023.88px);background-position:100% 0%"></div><div class="face" style="transform:rotateY(90deg) translateZ(-1023.88px);background-position:0% 100%"></div><div class="face" style="transform:rotateX(-90deg) translateZ(-1023.88px);background-position:50% 100%"></div><div class="face" style="transform:rotateX(90deg) translateZ(-1023.88px);background-position:100% 100%"></div></div></div>
       <div id="feedback" role="status" hidden></div>
       <button id="retry" type="button" hidden>重新加载原图</button>
       <button class="expand" id="fullscreen" type="button" aria-label="全屏观看" title="全屏观看"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9V4h5m6 0h5v5m0 6v5h-5M9 20H4v-5"/></svg></button>
@@ -91,7 +95,7 @@ dialog:not([open]){display:none}
     <figcaption><div class="actions">
       <button type="button" id="mode" class="primary" hidden><span aria-hidden="true">⟲</span> <span id="modeText">环视此处</span></button>
       <button type="button" id="detail">高清原图</button>
-    </div><span id="hint"></span></figcaption>
+    </div><div class="view-hint"><span id="quality" role="status" hidden></span><button id="retryQuality" type="button" hidden>重试高清</button><span id="hint"></span></div></figcaption>
   </figure>
   <nav class="tour-nav" aria-label="切换展区">
     <button id="prev" type="button"><span aria-hidden="true">←</span><span><small>上一处</small><b id="prevTitle"></b></span></button>
@@ -103,7 +107,150 @@ dialog:not([open]){display:none}
 <dialog id="lightbox"><div class="light-head"><strong id="lightTitle"></strong><button id="closeLight" type="button">关闭</button></div>
   <div class="zoom-scroll"><img id="large" alt=""></div><div class="light-foot"><p id="lightStatus" role="status"></p><a id="native" target="_blank" rel="noopener">打开原尺寸图</a></div>
 </dialog>
-<script>const rooms=[{"id":"MAIN","title":"品香主厅","width":832,"height":555,"small":"main-small.webp","detail":"main-detail.webp","surround":"main-surround.webp","original":"../photos/gallery-8k-r112.jpg","pixels":[7680,5120]},{"id":"CRA","title":"传香工坊","width":832,"height":555,"small":"cra-small.webp","detail":"cra-detail.webp","surround":"cra-surround.webp","original":"../photos/craft-8k-r113.jpg","pixels":[7680,5120]},{"id":"GARDEN","title":"香庭回廊","width":832,"height":555,"small":"garden-small.webp","detail":"garden-detail.webp","surround":"garden-surround.webp","original":"../photos/courtyard-8k-r112.jpg","pixels":[7680,5120]},{"id":"RET","title":"文创陈列","width":832,"height":555,"small":"ret-small.webp","detail":"ret-detail.webp","surround":"ret-surround.webp","original":"../photos/retail-8k-r113.jpg","pixels":[7680,5120]},{"id":"CAF","title":"庭院咖啡","width":555,"height":832,"small":"caf-small.webp","detail":"caf-detail.webp","surround":"caf-surround.webp","original":"../photos/cafe-8k-r113.jpg","pixels":[5120,7680]},{"id":"SMELL","title":"闻香空间","width":832,"height":832,"small":"smell-small.webp","detail":"smell-detail.webp","surround":"smell-surround.webp","original":"../photos/smell-8k-r113.jpg","pixels":[7680,7680]},{"id":"BOT","title":"识香展陈","width":832,"height":555,"small":"bot-small.webp","detail":"bot-detail.webp","surround":"bot-surround.webp","original":"../photos/bot-8k-r113.jpg","pixels":[7680,5120]},{"id":"HIS","title":"寻香展陈","width":832,"height":555,"small":"his-small.webp","detail":"his-detail.webp","surround":"his-surround.webp","original":"../photos/origin-8k-r113.jpg","pixels":[7680,5120]},{"id":"ENT","title":"门厅序厅","width":832,"height":555,"small":"ent-small.webp","detail":"ent-detail.webp","surround":"ent-surround.webp","original":"../photos/entry-8k-r113.jpg","pixels":[7680,5120]},{"id":"STREET","title":"展馆临街外观","width":832,"height":277,"small":"street-small.webp","detail":"street-detail.webp","surround":"street-surround.webp","original":"../photos/original-exterior-panorama.png","pixels":[2172,724]},{"id":"ALL","title":"叠院香阁鸟瞰","width":832,"height":326,"small":"all-small.webp","detail":"all-detail.webp","surround":"all-surround.webp","original":"../photos/exterior-8k-r113.jpg","pixels":[7680,3010]}];</script>
+<script>const rooms=[{"id":"MAIN","title":"品香主厅","width":832,"height":555,"small":"main-small.webp","detail":"main-detail.webp","surround":"main-surround.webp?v=137","zoomFront":true,"original":"../photos/gallery-8k-r112.jpg","pixels":[7680,5120]},{"id":"CRA","title":"传香工坊","width":832,"height":555,"small":"cra-small.webp","detail":"cra-detail.webp","surround":"cra-surround.webp?v=137","zoomFront":true,"original":"../photos/craft-8k-r113.jpg","pixels":[7680,5120]},{"id":"GARDEN","title":"香庭回廊","width":832,"height":555,"small":"garden-small.webp","detail":"garden-detail.webp","surround":"garden-surround.webp?v=137","zoomFront":true,"original":"../photos/courtyard-8k-r112.jpg","pixels":[7680,5120]},{"id":"RET","title":"文创陈列","width":832,"height":555,"small":"ret-small.webp","detail":"ret-detail.webp","surround":"ret-surround.webp?v=137","zoomFront":true,"original":"../photos/retail-8k-r113.jpg","pixels":[7680,5120]},{"id":"CAF","title":"庭院咖啡","width":555,"height":832,"small":"caf-small.webp","detail":"caf-detail.webp","surround":"caf-surround.webp?v=137","zoomFront":true,"original":"../photos/cafe-8k-r113.jpg","pixels":[5120,7680]},{"id":"SMELL","title":"闻香空间","width":832,"height":832,"small":"smell-small.webp","detail":"smell-detail.webp","surround":"smell-surround.webp?v=137","zoomFront":true,"original":"../photos/smell-8k-r113.jpg","pixels":[7680,7680]},{"id":"BOT","title":"识香展陈","width":832,"height":555,"small":"bot-small.webp","detail":"bot-detail.webp","surround":"bot-surround.webp?v=137","zoomFront":true,"original":"../photos/bot-8k-r113.jpg","pixels":[7680,5120]},{"id":"HIS","title":"寻香展陈","width":832,"height":555,"small":"his-small.webp","detail":"his-detail.webp","surround":"his-surround.webp?v=137","zoomFront":true,"original":"../photos/origin-8k-r113.jpg","pixels":[7680,5120]},{"id":"ENT","title":"门厅序厅","width":832,"height":555,"small":"ent-small.webp","detail":"ent-detail.webp","surround":"ent-surround.webp?v=137","zoomFront":true,"original":"../photos/entry-8k-r113.jpg","pixels":[7680,5120]},{"id":"STREET","title":"展馆临街外观","width":832,"height":277,"small":"street-small.webp","detail":"street-detail.webp","surround":"street-surround.webp?v=137","zoomFront":false,"original":"../photos/original-exterior-panorama.png","pixels":[2172,724]},{"id":"ALL","title":"叠院香阁鸟瞰","width":832,"height":326,"small":"all-small.webp","detail":"all-detail.webp","surround":"all-surround.webp?v=137","zoomFront":true,"original":"../photos/exterior-8k-r113.jpg","pixels":[7680,3010]}];</script>
+<script>// Project the viewing frustum onto the same six planes as the CSS cube.
+const faceNames=['front','right','back','left','up','down'];
+function cubePoint(face,u,v) {
+  switch(face) {
+    case 0:return [u,-v,1];
+    case 1:return [1,-v,-u];
+    case 2:return [-u,-v,-1];
+    case 3:return [-1,-v,u];
+    case 4:return [u,1,v];
+    default:return [u,-1,-v];
+  }
+}
+function rectOnCube(face,left=-1,top=-1,right=1,bottom=1) {
+  return {face,center:cubePoint(face,(left+right)/2,(top+bottom)/2),
+    corners:[[left,top],[right,top],[right,bottom],[left,bottom]].map(([u,v])=>cubePoint(face,u,v))};
+}
+const directions=faceNames.map((name,face)=>({...rectOnCube(face),key:name}));
+const frontTiles=[];
+for(let row=0;row<4;row++){
+  for(let col=0;col<4;col++){
+    const u=col*.5-1,v=row*.5-1;
+    frontTiles.push({...rectOnCube(0,u,v,u+.5,v+.5),key:'z'+row+col,row,col});
+  }
+}
+function visiblePart(part,view) {
+  let outside=31;
+  for(const [x,y,z] of part.corners){
+    const across=x*view.cosY-z*view.sinY;
+    const forward=x*view.sinY+z*view.cosY;
+    const depth=forward*view.cosP+y*view.sinP;
+    const up=y*view.cosP-forward*view.sinP;
+    const dx=depth*view.halfW,dy=depth*view.halfH;
+    outside&=(depth<=.001?1:0)|(across < -dx?2:0)|(across>dx?4:0)|(up < -dy?8:0)|(up>dy?16:0);
+  }
+  return outside===0;
+}
+function closeness(part,view) {
+  const [x,y,z]=part.center;
+  return ((x*view.sinY+z*view.cosY)*view.cosP+y*view.sinP)/Math.hypot(x,y,z);
+}
+
+class DirectionTextures {
+  constructor(world,stage,notify) {
+    this.world=world;this.stage=stage;this.notify=notify;
+    this.loaded=new Map();this.pending=new Map();this.failed=new Set();
+    this.generation=0;this.clock=0;this.timer=0;this.room=null;
+    this.wanted=[];this.signal='';
+  }
+  clear(){
+    ++this.generation;
+    clearTimeout(this.timer);this.timer=0;
+    for(const img of this.pending.values()){
+      img.onload=null;img.onerror=null;img.removeAttribute('src');
+    }
+    for(const entry of this.loaded.values()) entry.img.remove();
+    this.loaded.clear();this.pending.clear();this.failed.clear();
+    this.room=null;this.view=null;this.wanted=[];this.signal='';
+    this.stage.removeAttribute('data-hd-face');this.stage.removeAttribute('data-quality');
+    this.notify('');
+  }
+  start(room){this.clear();this.room=room;}
+  look(yaw,pitch,zoom,f,w,h){
+    if(!this.room || !w || !h) return;
+    const deg=Math.PI/180;
+    this.view={cosY:Math.cos(yaw*deg),sinY:Math.sin(yaw*deg),cosP:Math.cos(pitch*deg),sinP:Math.sin(pitch*deg),
+      halfW:w/(2*f)*1.012,halfH:h/(2*f)*1.012,zoom,physicalSide:2*f*(window.devicePixelRatio||1)};
+    if(!this.wanted.length){this.select();return;}
+    if(!this.timer) this.timer=setTimeout(()=>{this.timer=0;this.select();},55);
+  }
+  select(){
+    if(!this.room || !this.view) return;
+    const v=this.view;
+    const ranked=parts=>parts.filter(p=>visiblePart(p,v)).sort((a,b)=>closeness(b,v)-closeness(a,v));
+    const broad=ranked(directions);
+    this.central=broad[0];
+    const needsTiles=this.room.zoomFront && broad.some(p=>p.face===0) &&
+      ((v.zoom>=1.35 && (v.physicalSide>=1450 || v.zoom>=1.9)) || v.physicalSide>=3000);
+    this.tiles=needsTiles?ranked(frontTiles):[];
+    this.wanted=broad.concat(this.tiles);
+    for(const p of this.wanted){const entry=this.loaded.get(p.key);if(entry)entry.last=++this.clock;}
+    this.trim();this.pump();
+  }
+  trim(){
+    const wanted=new Set(this.wanted.map(p=>p.key));
+    for(const [isTile,limit] of [[false,4],[true,8]]){
+      const group=[...this.loaded].filter(([,r])=>(r.part.row!==undefined)===isTile);
+      const offscreen=group.filter(([k])=>!wanted.has(k)).sort((a,b)=>a[1].last-b[1].last);
+      let count=group.length;
+      for(const [k,r] of offscreen){
+        if(count<=limit && (!isTile || this.tiles.length)) break;
+        r.img.remove();this.loaded.delete(k);count--;
+      }
+    }
+  }
+  pump(){
+    if(!this.room || !this.central) return;
+    for(const part of this.wanted){
+      if(this.pending.size>=2) break;
+      if(!this.loaded.has(part.key) && !this.pending.has(part.key) && !this.failed.has(part.key))this.load(part);
+    }
+    const central=this.central.key;
+    const failed=this.wanted.some(p=>this.failed.has(p.key));
+    const baseReady=this.loaded.has(central);
+    const extra=this.tiles.length>0;
+    const quality=failed?'retry':!baseReady?'loading':extra && this.tiles.some(p=>!this.loaded.has(p.key))?'zoom-loading':extra?'detail':'hd';
+    this.stage.dataset.hdFace=central;
+    this.stage.dataset.quality=quality;
+    if(quality!==this.signal){this.signal=quality;this.notify(quality);}
+  }
+  load(part){
+    const generation=this.generation;
+    const img=new Image();
+    const current=()=>generation===this.generation && this.pending.get(part.key)===img;
+    this.pending.set(part.key,img);
+    img.alt='';img.draggable=false;img.decoding='async';img.className='orbit-detail';
+    img.dataset.part=part.key;
+    const tile=part.row!==undefined;
+    if(tile){
+      const pad=2*100/4096;
+      img.style.left=(part.col*25-pad)+'%';img.style.top=(part.row*25-pad)+'%';
+      img.style.width=img.style.height=(25+2*pad)+'%';
+    }
+    img.onerror=()=>{
+      if(!current()) return;
+      this.pending.delete(part.key);this.failed.add(part.key);this.pump();
+    };
+    img.onload=async ()=>{
+      if(img.decode){try{await img.decode();}catch{}}
+      if(!current()) return;
+      this.pending.delete(part.key);
+      if(img.naturalWidth!==(tile?1028:2048)){
+        this.failed.add(part.key);this.pump();return;
+      }
+      const face=this.world.children[part.face];
+      if(tile)face.append(img);else face.prepend(img);
+      this.loaded.set(part.key,{part,img,last:++this.clock});
+      this.trim();this.pump();
+    };
+    img.src='hd137/'+this.room.id.toLowerCase()+'/'+part.key+'.webp';
+  }
+  retry(){this.failed.clear();this.pump();}
+}
+</script>
 <script>'use strict';
 const $ = id => document.getElementById(id);
 const stage = $('stage'), photo = $('photo'), camera = $('camera'), world = $('world');
@@ -111,7 +258,14 @@ const selector = $('rooms'), light = $('lightbox'), large = $('large');
 const directory = 'board-views/';
 const geometryUrl = new URL($('modelLink').href);
 const allowOrbit = CSS.supports('transform-style', 'preserve-3d');
+const qualityLabels={loading:'正在载入高清…',hd:'高清环视','zoom-loading':'正在载入放大细节…',detail:'原图细节',retry:'高清暂未载入'};
+const hd=new DirectionTextures(world,stage,level=>{
+  $('quality').hidden=!level;
+  $('quality').textContent=qualityLabels[level]||'';
+  $('retryQuality').hidden=level!=='retry';
+});
 let index = 0, photoVersion = 0, modeVersion = 0, requestMode = false;
+let posterTimer=0, posterLoader=null;
 let yaw = 0, pitch = 0, zoom = 1, drawId = 0, detailVersion = 0;
 let distance = 0, horizontalTravel = 0, startX = 0, startY = 0, modeAtStart = '';
 const pointers = new Map();
@@ -141,12 +295,37 @@ function modeControls() {
 }
 function showPhoto() {
   ++modeVersion;
+  hd.clear();
   requestMode = false;
   stage.dataset.mode = 'photo';
   yaw = 0; pitch = 0; zoom = 1;
-  notice(); modeControls();
+  notice(); modeControls();schedulePoster();
+}
+function cancelPoster(){
+  clearTimeout(posterTimer);posterTimer=0;
+  if(posterLoader){posterLoader.onload=null;posterLoader.onerror=null;posterLoader.removeAttribute('src');posterLoader=null;}
+}
+function schedulePoster(){
+  clearTimeout(posterTimer);
+  const item=scene(), version=photoVersion;
+  if(!item || orbit() || requestMode || !photo.complete || !photo.naturalWidth ||
+     posterLoader || !photo.currentSrc.endsWith('/'+item.small))return;
+  const scale=Math.min(stage.clientWidth/item.width,stage.clientHeight/item.height)*(devicePixelRatio||1);
+  if(scale<1.14)return;
+  posterTimer=setTimeout(()=>{
+    if(version!==photoVersion || orbit() || requestMode)return;
+    const img=new Image();posterLoader=img;img.decoding='async';img.fetchPriority='low';
+    img.onload=async()=>{
+      if(img.decode){try{await img.decode();}catch{}}
+      if(version!==photoVersion || img!==posterLoader || orbit() || requestMode)return;
+      posterLoader=null;photo.src=img.src;
+    };
+    img.onerror=()=>{if(posterLoader===img)posterLoader=null;};
+    img.src=directory+item.detail;
+  },850);
 }
 function choose(i,updateUrl=true) {
+  cancelPoster();
   index = wrap(i);
   const item = scene(), version = ++photoVersion;
   pointers.clear();
@@ -169,7 +348,7 @@ function choose(i,updateUrl=true) {
   photo.alt = item.title+' · 展板效果图';
   photo.onload = () => {
     const ready = () => {
-      if(version === photoVersion) document.documentElement.dataset.ready = 'true';
+      if(version === photoVersion) {document.documentElement.dataset.ready='true';schedulePoster();}
     };
     if(photo.decode) photo.decode().then(ready,ready);
     else ready();
@@ -193,6 +372,7 @@ function frame() {
   const f=Math.max(w*.5/Math.tan(52*Math.PI/180),h*.5/Math.tan(38*Math.PI/180))*zoom;
   camera.style.perspective=f+'px';
   world.style.transform='translateZ('+f+'px) rotateX('+pitch+'deg) rotateY('+yaw+'deg)';
+  hd.look(yaw,pitch,zoom,f,w,h);
   stage.dataset.yaw=String(Math.round(yaw*10)/10);
   stage.dataset.pitch=String(Math.round(pitch*10)/10);
   stage.dataset.zoom=String(Math.round(zoom*100)/100);
@@ -206,6 +386,7 @@ function rotate(dx,dy) {
 }
 function beginOrbit() {
   if(!hasOrbit() || requestMode || orbit()) return;
+  cancelPoster();
   const version=++modeVersion, item=scene(), texture=new Image();
   requestMode=true;notice('正在打开环视…');modeControls();
   texture.onload=async () => {
@@ -215,6 +396,7 @@ function beginOrbit() {
     for(const face of world.children) face.style.backgroundImage=url;
     // Keep the decoded image alive while its six faces are displayed.
     camera.texture=texture;
+    hd.start(item);
     requestMode=false;
     stage.dataset.mode='panorama';notice();modeControls();frame();
   };
@@ -329,12 +511,13 @@ function openDetail() {
 selector.addEventListener('change',()=>choose(rooms.findIndex(r=>r.id===selector.value)));
 $('prev').onclick=()=>choose(index-1);$('next').onclick=()=>choose(index+1);
 $('retry').onclick=()=>choose(index,false);
+$('retryQuality').onclick=()=>hd.retry();
 $('mode').onclick=toggleOrbit;$('fullscreen').onclick=toggleFull;
 $('detail').onclick=openDetail;$('closeLight').onclick=closeLight;
 large.onclick=()=>large.classList.toggle('enlarged');
 light.addEventListener('click',e=>{if(e.target===light) closeLight();});
 window.addEventListener('popstate',()=>choose(selectedFromUrl(),false));
-window.addEventListener('resize',queueFrame);
+window.addEventListener('resize',()=>{queueFrame();schedulePoster();});
 document.addEventListener('fullscreenchange',fullLabel);
 if(window.ResizeObserver) new ResizeObserver(queueFrame).observe(stage);
 const linkedRoom=(new URLSearchParams(location.search).get('room')||'').toUpperCase();
