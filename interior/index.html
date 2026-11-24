@@ -25,12 +25,13 @@ footer{height:36px;padding:0 clamp(15px,2.6vw,48px);display:flex;align-items:cen
 .sample-switch{padding:3px;gap:0}.sample-switch button{cursor:pointer;color:inherit;border:0;background:transparent;padding:9px 13px;border-radius:2px;font-size:14px}.sample-switch button[aria-pressed=true]{color:white;background:#594837}
 @media(max-width:660px){.mast{gap:9px}.mast-links{gap:12px;font-size:13px}.sample-switch{padding:3px}.sample-switch button{font-size:13px;padding:8px 11px}}
 @media(max-width:420px){.mast h1,.mast-rule{display:none}}
+.status.failed{flex-wrap:wrap;width:max-content;text-align:center}
 </style>
 </head>
 <body>
 <header class="mast">
   <div class="brand">莞香入庭</div><span class="mast-rule"></span><h1>室内三维导览</h1>
-  <nav class="mast-links"><a href="review.html">同机位对比</a><a href="../#board">完整展板<span aria-hidden="true"> ↗</span></a></nav>
+  <nav class="mast-links"><a id="photo-gallery" href="review.html">摄影图集</a><a href="../#board">完整展板<span aria-hidden="true"> ↗</span></a></nav>
 </header>
 <main class="layout">
   <aside class="rail" aria-label="空间导览">
@@ -56,9 +57,10 @@ footer{height:36px;padding:0 clamp(15px,2.6vw,48px);display:flex;align-items:cen
       <button id="reset" type="button">复位</button><button id="auto" type="button" aria-pressed="false">自动环绕</button><button id="full" type="button">全屏</button>
     </div>
     <label id="ceiling-control" class="ceiling"><input id="ceiling" type="checkbox">寻香厅天花</label>
-    <div id="sample-control" class="ceiling sample-switch" role="group" aria-label="切换同机位灯光方案" hidden>
-      <button id="sample-before" type="button" aria-pressed="false">原方案</button>
-      <button id="sample-after" type="button" aria-pressed="true">暖光样板</button>
+    <div id="sample-control" class="ceiling sample-switch" role="group" aria-label="选择室内环视画面" hidden>
+      <button id="sample-photo" type="button" aria-pressed="true">摄影环视</button>
+      <button id="sample-after" type="button" aria-pressed="false">暖光模型</button>
+      <button id="sample-before" type="button" aria-pressed="false">原模型</button>
     </div>
     <span id="announcement" class="sr" aria-live="polite"></span>
   </section>
@@ -66,6 +68,6 @@ footer{height:36px;padding:0 clamp(15px,2.6vw,48px);display:flex;align-items:cen
 <footer><span id="gesture">拖动旋转 · 滚轮缩放 · 右键平移</span><span class="foot-title">莞香文化展馆</span></footer>
 <noscript>浏览三维场景需要启用 JavaScript。</noscript>
 
-<script src="app.js?v=r130b"></script>
+<script src="app.js?v=mobile135"></script>
 </body>
 </html>
